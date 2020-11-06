@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html 2일차 2번파일</title>
+    </head>
+<body>
+   <a href="https://www.naver.com/" ><button>click</button></a>
+
+   <br><hr><br>
+<a href="https://www.naver.com/">
+       <img src="pengsu3.jpg">
+   </a>
+<h3>하이퍼 링크 생성하기</h3>
+<ul>
+    <li>
+        <a href="https://www.naver.com">네이버</a>
+    </li>
+    <li>
+        <a href="https://www.daum.net">다음</a>
+
+    </li>
+</ul><br>
+
+<ul>
+    <li>
+        <a href="https://www.etnews.com">
+        <img src="./img/duck2.jpg" alt="">
+    </a><br>
+    </li>
+    <li>
+        <a href="https://chosun.com">
+    <img src="../images/duck.jpg" alt=""></a>
+    </li>
+</ul><br>n 
+<a href ="./html02-01.html">html 2일차</a>
+
+
+<br>
+<h4>a 태그의 target속성</h4>
+<!-- 새창열기 _self(기본값), _blank, _parent, _top -->
+<!-- 주로 _self, _blank를 사용 -->
+<ul>
+<li><a href="http://www.w3.org" target="_blank">W3C(새 윈도우,_blank)</a></li>
+<li><a href="http://www.etnews.com"target="_self">전자신문(현재 윈도우,_self)</a></li>
+<li><a href="http://www.naver.com" target="_parent">네이버(부모윈도우)</a></li>
+<li><a href="http://www.mk.co.kr"target="_top">매일경제신문(브라우저 윈동우,_top)</a></li>
+</ul>
+
+
+<br><hr><br>
+
+<h3>앵커를 사용하여 이동하는 링크</h3>
+<!-- html 태그에 id속성을 사용하여 해당 문서 내에서 유일한 값을 
+지정하고 a 태그를 사용하여 해당 위치로 이동시킴 -->
+<!-- id란 ? css, javascript에서 html의 특정
+태그를 선택하기 위한 구분자(선택자) 중 하나, 해당 html 문서 내에서
+유일한 값을 가짐 -->
+
+<ul id="list">
+    <li><a href="#love">love me tender</a></li>
+    <li><a href="#can">can't helf fallin in love</a></li>
+    <li><a href="#it">it's now or never</a></li>
+</ul>
+
+<br><hr><br>
+
+<h3 id="love">love me tender</h3>
+Love me tender, Love me sweet, Never let me go.<br><br><br>
+You have made my life complete, <br><br><br>
+And I love you so.<br> <br><br>
+Love me tender, Love me true, <br><br><br>
+All my dreams fulfilled.<br><br><br>
+For my darling I love you, And I always will.<br> <br><br><br>
+<a href="#list">리스트로 이동</a>
+
+<h3 id="can">can't help falling in love</h3>
+Love me tender, Love me sweet, Never let me go.<br><br><br> 
+You have made my life complete, And I love you so.<br><br><br> 
+Love me tender, Love me true, All my dreams fulfilled.<br><br><br> 
+For my darling I love you, And I always will.<br> <br><br><br>
+<a href="#list">리스트로 이동</a>
+
+<h3 id="it">it's now or never</h3>
+It's now or never, Come hold me tight<br> <br><br>
+Kiss me my darling, Be mine tonight<br> <br><br>
+Tomorrow will be too late,<br> <br><br>
+It's now or never. My love won't wait.<br><br><br> <br>
+
+<br><hr><br>
+
+<a href="#list">리스트로 이동</a>
+
+<h3>파일 다운로드 링크 만들기</h3>
+<!-- a태그에 download 속성을 사용시 해당 파일을 다운로드 할 수 있음 -->
+<!-- a태그의 href속성에 다운로드 할 파일의 위치를 입력 -->
+
+<ul>
+    <li><a href="./img/duck2.jpg">펭수 사진 보기</a></li>
+    <li><a href="./img/duck2.jpg"download>펭수 사진 다운로드</a></li>
+</ul>
+
+<br><hr><br>
+
+<h3> 인라인 프레임 사용하기 </h3>
+<iframe src="iframe1.html" frameborder="1" width="200" height="150"></iframe>
+<iframe src="iframe2.html" frameborder="1"width="200" height="100"></iframe>
+
+<hr><br>
+<!-- srcdoc : 기존의 src로 로딩하는 html 코드를 지우고 
+해당 속성에 html 코드를 입력하는 방식  -->
+
+<iframe src="iframe.html" frameborder="1"width="200", height="80"
+srcdoc="<html><head></head><body>hello</body></html>"></iframe>
+
+<h3> iframe을 사용하여 사이트 2개 로딩.</h3>
+<iframe src="http://www.mk.co.kr" 
+frameborder="1"width="300"height="300"></iframe>
+<iframe src="http://www.etnews.com"frameborder="1"
+ width="300"height="300"></iframe>
+
+<!-- 문제 3) iframe을 이용하여 네이버, 다음, 네이트를 동시에 출력하세요 -->
+<!-- 화면의 크기는 600x800 -->
+
+<iframe src="https://www.nate.com" frameborder="1"width="600"height="800"></iframe>
+<iframe src="http://www.netmarble.net/" frameborder="1"width="600"height="800"></iframe>
+<iframe src="https://www.nexon.com/Home/Game" frameborder="1"width="600"height="800"></iframe>
+
+<br><hr><br>
+
+<video src="mov_bbb.mp4" width="320" height="240" controls autoplay loop></video>
+<!-- 소스태그는 미디어 태그가 재생하는 미디어가 존재하지 않을 경우 
+정상적으로 미디어를 재생하기 위해서 재생하는 미디어를 여러가지 방식의 미디어
+파일을 등록하여 재생하는 태그 -->
+<video width="320" height="240" controls>
+    <source src ="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+            <source src="mov_bbb.webm" type="video/webm">
+    브라우저가 video 태그를 지원하지 않습니다.
+</vided>
+<!-- video 태그에서 source태그 사용 시 type을 미디어 포맷에 맞게 설정해야함 -->
+<!-- mp4 : video/mp4 -->
+<!-- WepM : video/webm -->
+<!-- Ogg : video/ogg, macos의 사파리 브라우저에서 지원하지 않음-->
+
+
+
+<br><br><br><br><br><br><br><br>
+</body>
+
+</html>

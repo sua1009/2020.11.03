@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html 1일차 1번 파일</title>
+    </head>
+    <body>
+        <!-- h1~h6태그 -->
+        <h1 title="h1 태그로 작성">html 1일차</h1>
+        <!-- 마우스 포인터를 가져가면 툴팁이 출력됨 -->
+        <h2>html 첫번째 파일</h2>
+        <h3>양수아</h3>
+        <h4>처음 만들어 보는 html 문서</h4>
+        <h5>전화번호 : 010-2449-0164</h5>
+        <h6>부산직업전문학교</h6>
+        <!-- h1~ h6 태그는 문서의 제목을 입력 시 사용하는 태그 -->
+        <!-- 일반 텍스트에 css를 활용하여 텍스트를 굵게 혹은 크게 
+        하여 제목으로 사용하는 것은 좋지 않음 -->
+        <p>글자를 입력합니다.</p>
+        <p style="font-weight: bold;">글자를 입력합니다.</p>
+        <h4>글자를 입력합니다.</h4>
+
+        <!-- <p>태그 -->
+        <p>html문서에서 본문을 여러 단락으로 나누어 사용할 때 사용하는 태그</p>
+        <p>여러개의 공백 문자는 하나의 공백 문자로 처리됨</p>
+        <p>여러개의 엔터키 역시 하나의 공백 문자로 처리됨</p>
+        <!-- html에서 원하는 대로 공백 문자 및 엔터키 효과를 사용하려면 html 전용 
+        특수 기호를 사용하거나 <pre></pre>태그를 사용해야 함  -->
+        <pre>사용   하는대로               표시하기</pre>
+        <p>사용&nbsp;&nbsp;&nbsp;하는대로&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;표시하기</p>
+
+            <p>p태그 안에 사용하는대로 쓸 수 있는 <pre>프리 태그         사용해보기</pre>
+            !!!!!!!!!태그 안에 사용하기</p>
+
+
+        <!-- <hr>태그 -->
+        <!-- 수평선 긋기  -->
+        <!-- hr 태그는 종료 태그가 없음  -->
+        <p>수평선 긋기</p>
+        <hr>
+        <p>hr 태그의 hr은 horizontal에서 나옴</p>
+        <hr>
+        <p>hr태그는 종료 태그가 없음</p>
+
+
+
+        <!-- <br>태그 -->
+        <h3>새로운 줄 넘어가기</h3>
+        <hr>
+        &lt;br&gt;태그로 다음 줄로 넘어갑니다.<br>
+        2개의 &lt;br&gt;태그로 두번 넘어 갑니다.<br><br>
+        <hr>
+
+
+        <br>
+        <hr>
+        <br>
+        
+        <h3>기호 넣기</h3>
+            10&divide; 2 = 5<br>
+            &radic; 2= 1.414<br>
+            2 &nbsp;&nbsp;&lt;&nbsp;&nbsp;&nbsp;3<br>
+            오늘 &quot;Elvis&#34; 노래를 들었다. 
+
+            <br><hr><br>
+
+            <h3>개발자의 포맷 그대로 출력</h3>
+<p>
+    &lt;p&gt;태그를 사용하면
+    여러개의 빈칸은 하나로,
+    여러 줄은 한 줄에 붙여 출력됩니다.
+</p><hr>
+
+<pre>
+그러나 &lt;pre&gt;태그를 사용하면
+    사용자가 입력한 
+    그대로 출력됩니다.
+</pre>
+
+
+        <br><hr><br>
+
+        <h3>택스트 꾸미기</h3>
+        <hr>
+        <p>
+            <b>진하게</b><br>
+            <strong>중요한</strong><br>
+            <em>강조</em><br>
+            <i>이탤릭으로 강조</i><br>
+            <br>
+            <b><i>진하게 이탤릭으로 강조</i></b><br>
+            보통 문자<small>한 단계 작은 문자</small><br>
+            <del>취소선</del><br>
+            <ins>추가(밑줄)</ins><br>
+            보통문자의 <sup>윗첨자</sup><br>
+            보통문자의<sub>아래첨자</sub><br>
+            <mark>하이라이팅</mark><br>
+        </p>
+
+        <br><hr><br>
+        
+        <h3>블록 태그와 인라인 태그</h3>
+
+        <p>p 태그의 사용 영역1</p>
+        <p>p 태그의 사용 영역2</p><p>p 태그의 사용 영역3</p>
+        <hr>
+        <button>버튼 태그의 사용 영역1</button>
+        <button>버튼 태그의 사용 영역2</button><button>버튼 태그의 사용 영역3</button>
+
+        <br><hr><br>
+        <div style= "background-color:skyblue; padding:20px;
+        width: 200px;">
+        내가 사람의 방언과 천사의 말을 할지라도 
+        <span style="background-color: cadetblue;" "color:red">사랑</span>이 없으면
+        소리 나는 구리와 울리는 꽹과리가 되고,
+        <span style="color:red">사랑</span>이 없으면 
+        아무것도 아니라.
+        </div>
+        
+        <div style= "background-color:skyblue; padding:20px;
+        width: 200px;">
+        내가 사람의 방언과 천사의 말을 할지라도 
+        <span style="color:red">사랑</span>이 없으면
+        소리 나는 구리와 울리는 꽹과리가 되고,
+        <span style="color:red; background-color: gray">사랑</span>이 없으면 
+        아무것도 아니라.
+        </div>
+        <br>
+
+        <div style= "background-color:skyblue;">
+            내가 사람의 방언과 천사의 말을 할지라도 
+            <span style="color:red">사랑</span>이 없으면
+            소리 나는 구리와 울리는 꽹과리가 되고,
+            <span style="color:red">사랑</span>이 없으면 
+            아무것도 아니라.</div>
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

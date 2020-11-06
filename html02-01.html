@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <title>html 2일차</title>
+    <body>
+        <h3>리스트 사용하기</h3>
+        <h4>ol사용</h4>
+        <ol type = "1" start = "5">
+            <li>아메리카노</li>
+            <li>카페라떼</li>
+            <li>에스프레소</li>
+        </ol>
+        <!-- ol 사용시 type속성을 사용하여 순서 기호를 변경할 수 있음 -->
+        <!-- 1,a,A,I(로마숫자 대문자),i(로마숫자 소문자) -->
+        <!-- start 속성을 사용 시 원하는 숫자부터 시작가능 -->
+
+        <ol start = "11" >
+            <li>페퍼민트</li>
+            <li>카모마일</li>
+            <li>로즈마리</li>
+        </ol>
+
+        <ol type="A" start= "11">
+            <li>슈팅스타</li>
+            <li>엄마는 외계인</li>
+            <li>바람과 함께 사라지다</li>
+        </ol>
+
+        <h4>ul사용</h4>
+        <ul>
+            <li>아이템1</li>
+            <li>아이템2</li>
+            <li>아이템3</li>
+        </ul>
+        <!-- ul도 스타일 변경이 가능하나 css를 사용해야 함 -->
+        <!-- css의 list-style-type 속성을 사용하여 목록표시를 변경할 수 있음 -->
+        <!-- circle, disc(기본), square, none -->
+        <ul style= " list-style-type: circle;">
+            <li>아이템1</li>
+            <li>아이템2</li>
+            <li>아이템3</li>
+        </ul>
+         <ul style = "list-style-type: square;">
+                <li>아이템1</li>
+                <li>아이템2</li>
+                <li>아이템3</li>
+            </ul>
+           
+        <ul style= "list-style-type: disc;">
+                <li>아이템1</li>
+                <li>아이템2</li>
+                <li>아이템3</li>
+            </ul>
+       
+        <ul style="list-style-type: none;">
+                <li>아이템1</li>
+                <li>아이템2</li>
+                <li>아이템3</li>
+            </ul>
+       
+            <h4>목록 안의 목록 넣기 </h4>
+            <!-- ul,ol 안에 ul, ol을 추가로 입력 시 다단 목록이 생성됨  -->
+       
+            <ol>
+                <li>커피</li>
+                <ol>
+                    <li>아메리카노</li>
+                <li>카페라떼</li>
+                <li>에스프레소</li>
+                <ol>
+                    <li>샷추가</li>
+                </ol>
+                </ol>
+               
+                <li>허브티</li>
+               <ol>
+                <li>자스민</li>
+                <li>카모마일</li>
+                <li>루이보스</li>
+               </ol> 
+               
+            </ol>
+
+
+            <!-- 문제 1 -->
+            <!-- 위의 ol을 참고하여 ul을 사용하여 다단 목록을 생성하세요 -->
+            <br><br>
+           <h4>ul을 사용하여 목록넣기</h4>
+            <ul>
+                <ul style="list-style-type: square;">
+                    <li>커피</li>
+                    <ul>
+                        <li>아메리카노</li>
+                        <li>카페라떼</li>
+                        <li>에스프레소</li>
+                        
+                </ul>
+                <ul>
+                        <li>샷추가</li>
+                    </ul>
+                </ul>
+                <ul><li>허브티</li>
+                    <ul>
+                        <li>자스민</li>
+                        <li>카모마일</li>
+                        <li>루이보스</li>
+                    </ul>
+                </ul>
+                
+               
+                
+            
+
+
+        <!-- dl은  ul, ol과 달리 dt, dd를 사용하여 리스트를 표현함 -->
+        <!-- dt : 리스트의 제목 부분 -->
+        <!-- dd : 리스트의 목록 부분 -->
+        <dl>
+            <dt><strong>Internet Explorer</strong></dt>
+        <dd> 마이크로 소프트에서 만든 브라우저로 현재는 단종되었음</dd>
+        <dt><strong>Firefox</strong></dt>
+        <dd>Mozilla 재단에서 오픈소스로 만든 것으로 W3C의 웹 표준을 선도</dd>
+        <dt><strong>Chrome</strong></dt>
+        <dd>구글에서 만든 것으로 현재 가장 인기</dd>
+    </dl>
+    <!-- ul에서 목록 표시를 없애면 dl과 비슷한 형태로 사용할 수 있음  -->
+    <ul style ="list-style-type: none;">
+    <li>구글에서</li>
+    </ul>
+ 
+<br><br><br>
+<h3>테이블 만들기</h3>
+<table border="1">
+<caption>1학기 성적 </caption>
+<thead>
+    <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+</thead>
+    <tbody>
+        <tr>
+            <td>황기태</td>
+            <td>80</td>
+            <td>70</td>
+        </tr>
+    <tr>
+        <td>이재문</td>
+        <td>95</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>이병은</td>
+        <td>40</td>
+        <td>61</td>
+    </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+        <th>합</th>
+        <th>225</th>
+        <th>230</th>
+    </tr>
+    </tfoot>
+</table>
+
+<br><br>
+
+<table border="1">
+    <caption>고양이 갤러리</caption>
+    <thead>
+        <!-- thead: 테이블 내의 제목 부분을 구분하는 태그 -->
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>작성일</th>
+            <th>조회</th>
+            <th>추천</th>
+        </tr>
+ </thead>
+    <!-- tbody: 테이블 내의 몸통 부부을 구분하는 태그 -->
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>시골아깽이</td>
+            <td>ㅐㅐ</td>
+            <td>10:12</td>
+            <td>42</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>행복한 고양이</td>
+            <td>ㅐㅐ</td>
+            <td>04:12</td>
+            <td>27</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>고양이 성격과 행동은 주인을 닮는데요</td>
+            <td>ㅐㅐ</td>
+            <td>10:03</td>
+            <td>70</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h4>테이블에 이미지 넣기</h4>
+<table border="1">
+    <caption>펭수</caption>
+<tbody>
+<tr>
+    <td><img src= "pengsu.jpg"width=400 height="400"></td>
+    <td><img src="pengsu1.jpg"width=400 height="400"></td>
+    <td><img src="pengsu3.jpg"></td>
+</tr>
+</tbody>
+</table>
+<!-- 웹에서의 경로 표시 방법 -->
+<!-- 웹에서 경로를 표시하는 방법은 2가지가 존재함 -->
+<!-- 절대 경로 , 상대 경로 -->
+<!-- 웹에서는 최상위 폴더(디렉토리)를 root 폴더(디렉토리)라고 함  -->
+<!-- root 폴더를 뜻하는 기호는 '/'임 -->
+<!-- 웹에서 현재 폴더를 뜻하는 기호는 '.' -->
+<!-- 웹에서 현재 폴더보다 한단계 상위 폴더를 뜻하는 기호는 '..' -->
+<!-- 웹에서 각 폴더를 구분하는 기호를 '/' -->
+<!-- 절대 경로 : 최상위 폴더를 기준으로 원하는 경로를 찾아가는 방식  -->
+<!-- C:\java102\html\pengsu01.jpg -->
+<!-- linux 나 web방식 -->
+<!-- /java102/html/pengsu01.jpg -->
+<!-- web 에서의 최상위 폴더 -->
+<!-- 최상위 폴더 아래의 java102폴더 선택 -->
+<!-- /java102 -->
+<!-- 최상위 폴더 아래의 java102 폴더 아래의 html 폴더 아래의 pengsu01.jpg -->
+<!-- /java102/html/pengsu01.jpg -->
+<!-- 상대 경로 : 현재 폴더의 위치를 기준으로 원하는 경로를 찾아가는 방식  -->
+<!-- '.', '..' 을 이용해서 현재 나의 위치를 기준으로 각 폴더를 이동하여 
+    원하는 폴더 및 파일의 위치를 표시함  -->
+<!-- ./ : 현재 내가 있는 폴더 -->
+<!-- ../ : 현재 내가 있는 폴더의 상위 폴더 -->
+<!-- 현재 내가 java102 폴더에 있고, pengsu01.jpg 파일이 현재 폴더 아래의 
+    html 폴더에 있을 경우 펭수 파일 찾기 -->
+<!-- ./html/pengsu01.jpg -->
+<!-- 현재 위치가  html이고, pengsu03.jpg선택  -->
+<!-- ./img/pengsu03.jpg -->
+<!-- 현재 위치가 java102이고, pengsu03.jpg선택 -->
+<!-- ./html/img/pengsu03.jpg -->
+<!-- 현재 위치가 html이고, pengsu02.jpg 선택  -->
+<!-- ../images/pengsu02.jpg -->
+<!-- 현재위치가 html이고, 2단계 상위 폴더에 있는 pengsu01.jpg를 선택 -->
+<!-- ../../pengsu01.jpg -->
+
+<br><hr><br>
+<h4>절대 경로를 사용하여 이미지 출력</h4>
+<ul>
+    <li>최상위 폴더의 이미지 출력</li>
+    <ul>
+        <li><img src= "/pengsu.jpg" art=""></li>
+    </ul>
+</ul>
+<li>java102 폴더의 이미지 출력</li>
+<ul>
+    <li><img src ="/java102/pengsu1.jpg" art=""></li>
+</ul>
+<li>java102/html 폴더의 이미지 출력</li>
+<ul>
+    <li><img src="/java102/html/pengsu3.jpg"art= ""></li>
+</ul>
+<li>java102/images 폴더의 이미지 출력</li>
+<ul>
+    <li><img src="/java102/images/duck.jpg" art= ""></li>
+</ul>
+<!-- 문제 2 -->
+<!-- 상대 경로 사용 시 사용하려는 파일이 현재 폴더에 같이 있을 경우 폴더명을 
+표시하지 않아도 됨 -->
+<!-- 현재폴더 ./은 생략가능 -->
+<li>java102/html 폴더의 이미지 출력</li>
+<ul>
+    <li><img src= "./pengsu3.jpg" alt=""> </li>
+</ul>
+<li> java102/images 폴더의 이미지 출력</li>
+<ul>
+    <li><img src= "../images/duck.jpg" alt=""></li>
+</ul>
+<li>java102/html/img 폴더의 이미지 출력</li>
+<ul>
+    <li><img src = "./img/duck2.jpg" alt=""></li>
+</ul>
+
+    </body>
+</html>

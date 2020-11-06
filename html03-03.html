@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html 3일차 3번째 파일</title>
+    </head>
+    <body>
+        <h3>figure 태그 사용</h3>
+        <hr>
+        <figure id="1-1">
+            <figcaption>alert() 함수 활용</figcaption>
+            <pre>
+                <code>function f() {alert("경고합니다);}</code>
+            </pre>
+            <hr>
+            <small>실행결과</small>
+            <pre>
+                <img src="pengsu3.jpg"alt="실행결과">
+            </pre>
+        </figure>
+
+        <hr>
+        <figure>
+            <img src="pengsu3.jpg" alt="" >
+            <figcaption>펭수 이미지</figcaption>
+        </figure>
+
+        <img src="pengsu3.jpg" alt="">
+        <p>펭수이미지</p>
+
+        <br><hr><br>
+
+        <h3>details와 summary태그</h3>
+        <details>
+            <summary>Question 1</summary>
+            <p>웹 개발자가 알아야 하는 언어 3가지?</p>
+        </details>
+
+        <details>
+            <summary>Answer 1</summary>
+            <p>HTML5, CSS, Javascript</p>
+        </details>
+
+        <br><hr><br>
+
+        <h3>인라인 시맨틱 태그 사례</h3>
+        <!-- meter 태그는 지정된 범위 또는 소수값 내의 value 값을 출력함 -->
+        <!-- meter 태그의 속성 : min, max, value -->
+        <!-- progress 태그는 meter태그와 비슷하지만 데이터 값이 증감하는 그래프를 표시할 때 사용 -->
+        <!-- progress 태그의 속성 :  max, value(현재값) -->
+       
+        <hr>
+        <p>내일 <mark>HTML5 시험</mark><br>
+        시간은 <time>09:00</time><br>
+        난이도<meter value="0.8">80%</meter><br>
+        자료 업로딩(20%)
+        <progress value="2" max="10"></progress><br>
+        </p>
+
+        <br><hr><br>
+        <h3>사용자 데이터 입력을 받기 위한 form태그</h3>
+        
+        <!-- action 속성 : 폼 데이터를 처리할 웹 서버 응용프로그램의 이름 -->
+        <!-- submit 버튼이 눌리면 브라우저는 action에 지정된 웹 서버 응용프로그램 실행 요청 -->
+        <form action ="iframe1.html" method="get">
+        사용자 id : <input type="text" size="15" value="" name="userid"><br>
+        비밀번호  : <input type= "password" size="15" value=""name="userpw">
+                 <input type="submit"value="완료">
+
+        </form>
+    </div>
+
+    <br><br>
+    <h3>네이버 검색 폼 가져와서 쓰기</h3>
+    <form id ="sform" name="sform"
+    action="https://search.naver.com/search.naver" mathod="get"
+    role="search">
+    <input type="text" name ="query" value="">
+    <input type="submit"value="검색">
+    </form>
+
+    <br><hr><br>
+    <h3>input태그의 여러가지 타입</h3>
+
+    <form action=" " method="get">
+    
+    <label for="userid">ID : </label>
+    <input type="text" id="userid" name="userid"><br>
+    <label for="userpw">Password : </label>
+    <input type="password" id="userpw" name="userpw"><br>
+    <label for="useremail">Email : </label>
+    <input type="email" id="useremail" name="useremail">
+    <br><br>
+
+    <!-- radio box와 checkbox 의 차이점은 radio box는 name 의 값을
+    모두 통일해야 함 -->
+    <!-- checkbox 는 name의 값을 모두 다르게 해야 함 -->
+        <h4>radio box</h4>
+    <input type="radio" name="gender" value="남자">
+    <label for="male">남성</label><br>
+    <input type="radio" id="female" name="gender" value="여자">
+    <label for="female">여성</label><br>
+    <input type="radio" id="other" name="gender" value="기타">
+    <label for="or">제 3의성</label><br><br>
+        <h4>checkbox</h4>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="자전거">
+    <label for="vehicle1">자전거</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="자동차">
+    <label for="vehicle2">자동차</label><br>
+    <input type="checkbox" id="vehicle3" name=" vehicle3"value="보트">
+    <label for="vehicle3">보트</label><br>
+
+    <br><hr><br>
+
+    <h3>버튼의 종류</h3>
+    <!-- input 태그의 type 중 button, reset, submit은 모습은 버튼으로
+    모두 동일하나 기능은 다름 -->
+    <!-- type= button은 단순 버튼으로 혼자서는 아무런 기능이 없음 ,
+    자바스크립트와 함께 사용해야 함 -->
+    <!-- type="reset" 은 button과 동일한 모습을 하고 있지만 사용자가 입력한 
+    모든 내용을 초기화하는 기능을 가짐-->
+    <!-- type="submit"은 button과 동일한 모습을 하고 있으며, 클릭 시 form
+    태그에 있는 모든 데이터를 서버로 전송하는 기능을 함 -->
+    <!-- input=button| reset|sumit 은 시맨틱 태그인 <button>태그로 사용해도
+        동일한 효과를 가짐-->
+    <input type="button" value="기본버튼">
+    <input type="reset" value="취소버튼">
+    <input type="submit" value="확인 버튼">
+    <br><hr>
+
+    <button type="button">기본버튼</button>
+    <button type="reset">취소버튼</button>
+    <button type="submit">확인버튼</button>
+
+    <br><hr><br>
+
+    <h4>color, date</h4>
+    <label for="favcolor">색상선택 : </label>
+        <input type="color" id="favcolor" name="favcolor">
+
+        <br>
+
+        <label for="birthday">생일 : </label>
+        <input type="date" id="birthday" name="birthday">
+    
+        <br>
+        
+        <label for="birthday2">생일 : </label>
+        <input type="datetime-local" id="birthday2" name="birthday2">
+
+        <br>
+
+        <label for="myFile">첨부파일 :</label>
+        <input type="file" id="myFile" name="myFile">
+
+        <br><hr><br>
+
+        <h4>숫자, 범위설정, 검색, 전화, url</h4>
+        <!-- url은 'http://'가 없을 경우 에러 메세지가 뜸 -->
+
+        <label for="homepage">homepage : </label>
+        <input type="url" id="homepage" name="homepage">
+
+        <br>
+        <!-- tel은 pattern 속성을 사용하여 입력하는 데이터를 강제할 수 있음 -->
+        <label for="phone">휴대폰 :</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}
+        -[0-9]{4}-[0-9]{4}">
+
+        <br>
+       
+        <label for="search">검색 :</label>
+        <input type="search" id="search" name="search">
+        <button type="sumit">검색</button>
+
+        <br>
+        <!-- range는 min, max 속성을 사용하여 입력할 수 있는 데이터를 지정함,
+        슬라이드 바를 이용하여 데이터를 입력할 수 있음 -->
+        <label for="range">범위 : </label>
+        <input type="range" id="range" name="range" min="0", max="50">
+
+        <br>
+        <!-- number는 숫자만 입력하도록 강제함, 화살표를 사용하여 값을 1씩
+        증감 시킬 수 있음, min, max 가 존재하여 최소, 최대값을 지정할 수 있음 -->
+
+        <label for="num">나이 : </label>
+        <input type="number" id="num" name="num">
+
+            <br><hr><br>
+            <h4>textarea 사용하기</h4>
+            <!-- 여러줄의 텍스트를 입력할 경우 사용 -->
+            <textarea cols="50" rows="10" name="memo"></textarea>
+            <br><br><br>
+
+            <h3>datalist사용하기</h3>
+        <label>나라 : </label>
+        <input type="text" list="countries">
+        <datalist id="countries"><br>
+            <option value="가나"></option>
+            <option value="스위스"></option>
+            <option value="브라질"></option>
+        </datalist>    
+
+        id: <input type="text">
+
+
+</form>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

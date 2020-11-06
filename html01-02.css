@@ -1,0 +1,10 @@
+h2 {
+    color:deeppink ;
+    border: 2px dashed yellowgreen;
+}
+
+h3 {
+    font-style: italic;
+    color: teal;
+    background-color: darkorange;
+}
