@@ -90,6 +90,18 @@
            #rem1 .p02 {font-size: 1rem;}
            #rem1 .p04 {font-size: 1rem;}
            #rem1 .p05 {font-size: 2rem;}
+           
+           /* 반응형 웹디자인으로 인하여 화면 크기에 맞도록 변경되는 상대 길이 단위 */
+           /* vw : viewport(divice) 를 기준으로 하여 너비값의 100분의 1의 단위 
+                - 디바이스의 너비가 1000px일 경우 vw =10px이 됨*/
+           /* vh : viewport 를 기준으로 하여 높이값의 100분의 1 단위
+                - 디바이스의 높이가 2000px일 경우 vh는 20px이 됨
+                - vh는 viewport 높이의 1% 길이와 동일 */
+                
+           /* vmin : viewport 를 기준으로 하는 vw, vh 사용 시 최저값을 설정하는 단위 
+              vmax : viewport 를 기준으로 하는 vw, vh 사용 시 최대값을 설정하는 단위 
+                - 브라우저의 크기가 700px x 1100px 일 경우, vmin =7px, vmax = 11px 이 되고,
+                 크기가 800px x 1080px이 되면 vmin = 8px, vmax = 10.8px */
 
     </style>
 </head>
@@ -177,6 +189,10 @@
         <p class="p05">부모 태그 폰트 크기 변경 후 2rem</p>
     </div>
     </div>
+
+
+
+
 
 
 </body>

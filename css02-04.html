@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 2-4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        html {font-family: 'Jua', sans-serif;}
+        /* text-indent : 텍스트를 지정한 크기만큼 들여쓰기하는 속성,
+        속성 값은 길이, %사용
+            text-align : 텍스트를 정렬하는 속성 
+                -left, right, center, justify(양쪽정렬)
+            text-decoration : 텍스트를 꾸며주는 속성으로 밑줄, 취소선, 윗줄 등을 추가함
+                -none, underline, overline, line-through */
+        h3 { text-align: right;}
+        span {text-decoration: line-through;}
+        strong {text-decoration: overline;}
+            .p1 {
+                text-indent: 3em;
+                text-align: justify;
+            }
+            .p2 { 
+                text-indent: 1em;
+                text-align: center;
+            }
+            .a1 { text-decoration:line-through;}
+
+            /* css의 font와 모양 */
+            /* 1. 내컴퓨터에 설치된 폰트
+               2. 웹 폰트 사용 */
+            /* 폰트 사용시 ','로 나열하며, 중간에 공백기호가 있을 경우 ""이용하여 묶어줌  */
+
+            /* font
+            1. font-family : 여러가지 폰트를 적용, 비슷한 서체끼리 써야함  
+            2. font-size : 1. px , 2. midium, large, small 등.. 3. em
+            3. font-style : italic
+            4. font-weight : 글자의 굵기 (100~900 범위, 100단위씩 설정가능, 기본은 400 )
+                -normal(400), bold(700)
+            5. font 프로퍼티 : style, weight, size, family 를 순서대로 모두 지정가능 
+                (ex> font : font-style, font-weight, font-size, font family)
+            */
+
+            body {
+                /* font-family: 'Times New Roman',
+                Times, serif; */
+                font-size: large;
+            }
+            h3 {
+                font : italic bold 40px consolas, 
+                sans-serif;
+            }
+    </style>
+</head>
+<body>
+    <h3>text관련 속성</h3>
+    <p class="p1">HTML의 태그만 으로 기존의 워드프로세서와 같이 들여쓰기, 정렬, 공백,
+        간격 등과 세밀한 <span>텍스트 제어</span>를 할 수 없다.</p>
+    <p class="p2">그러나, <strong>스타일 시트</strong>는 이를 가능하게 한다. 들여쓰기, 
+    정렬에 대해서 알아본다. </p>
+    <a class="a1" href="https://www.naver.com" target="_blank">밑줄이 없는 네이버 링크</a>
+
+<br><hr><br>
+<h3>font 관련 속성</h3>
+<p style="font-weight: 900;">font-weight 900</p>
+<p style="font-weight: 100;">font-weight 100;</p>
+<p style="font-style: italic;">Italic Style</p>
+<p style="font-style: oblique;">Oblique Style</p>
+<p style="font-size:1.5em;">현재 크기의 <span>1.5배</span>크기로</p>
+
+
+
+
+
+
+
+
+</body>
+</html>
